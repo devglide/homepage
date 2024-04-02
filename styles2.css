@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-bg-color: #DDCCCC;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    margin-bottom: 10px; /* Adjusted margin */
+    font-weight: lighter;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.logo-link {
+    display: block; 
+    width: 90px;
+    height: 40px; 
+}
+.film-link {
+    display: block; 
+    width: 90px; 
+    height: 40px; 
+    padding-right: 1em;
+}
+
+.journey-link {
+    display: block; 
+    width: 90px;
+    height: 40px; 
+    padding-right: 2em;
+}
+
+#update {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+    padding: .15rem 1.5rem;
+    letter-spacing: 1px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: var(--nav-bg-color);
+    gap:25px;
+    padding:10px 30px;
+    z-index: 5;
+    
+}
+
+.fill {
+    flex: 1;
+}
+
+.nav-png {
+    height: 40px; 
+    display: inline-block; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.family {
+    max-width: 1100px;
+    display: grid;
+    margin: auto;
+    margin: 10px;
+    gap: 1rem;;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.family-article {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.tree {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    
+}  
+
+.family-article-2 {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.hands {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.finger-family {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+.emotions {
+    max-width: 1100px;
+    display: grid;
+    margin: auto;
+    margin: 10px;
+    gap: 1rem;;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.happy {
+    grid-column: 1 / 3;
+grid-row: 1 / 2;
+}
+
+.sad {
+    grid-column: 1 /3;
+    grid-row: 2 / 3;
+}
+
+.emotion-article {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+
+.scared {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+
+}
+
+.angry {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+
+.emotion-article-2 {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.my-body {
+    max-width: 1100px;
+    display: grid;
+    margin: auto;
+    margin: 10px;
+    gap: 1rem;;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav .nav-icon img {
+    max-width: 100%; 
+    max-height: 100%;
+    height: auto;
+   
+}
+
+.family img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.emotions img {
+    width: 100%;
+    height: auto;
+
+}
+
+.hands-on img {
+    width: 100%;
+    height: auto;
+
+}
+
+.my-body img {
+    width: 100%;
+    height: auto;
+
+}
+
+.senses img {
+    width: 100%;
+    height: auto;
+
+}
+
+.senses {
+    max-width: 1100px;
+    display: grid;
+    margin: auto;
+    margin: 10px;
+    gap: 1rem;;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.senses-article {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.senso-box {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.senses-article-2 {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.senso-box-2 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.senso-box-3 {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+
+.hands-on {
+    max-width: 1100px;
+    display: grid;
+    margin: auto;
+    margin: 10px;
+    gap: 1rem;;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.all-hands {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.all-hands img {
+    width: 80%; 
+    height: auto;
+    
+   
+   
+}
+
+.hands-on-article-1 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.hands-on-article-2 {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;;
+}
+
+.finger-1 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;;
+
+}
+
+
+.fingers-3 {
+
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;;
+}
+
+.faces {
+    grid-column: span 2;
+}
+
+.face-2 {
+    display: block;;
+}
+
+.i-like {
+    grid-column: span 2;
+}
+
+.article-col {
+    grid-column: span 2;
+}
+
+
+@media screen and (max-width: 768px) {
+    .my-body {
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+    .faces {
+        grid-column: span 2;
+    }
+
+    .face-2 {
+        display: none;
+    }
+
+    .i-like {
+        grid-column: span 2;
+    }
+
+    .article-col {
+        grid-column: span 1;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .family {
+        grid-template-columns: 1fr;
+    }
+
+    .family-article {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    
+    .tree {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }  
+    
+    .family-article-2 {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    
+    .hands {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+    
+    .finger-family {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+
+
+    .emotions {
+        grid-template-columns: 1fr;
+    }
+
+    .happy {
+        grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    }
+    
+    .sad {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+    
+    .emotion-article {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    
+    .scared {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    
+    }
+    
+    .angry {
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+    }
+    
+    .emotion-article-2 {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+
+    .senses {
+        grid-template-columns: 1fr;
+    }
+
+    .senses-article {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    
+    .senso-box {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    
+    .senses-article-2 {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    
+    .senso-box-2 {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+    
+    .senso-box-3 {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+
+
+
+    .hands-on {
+        grid-template-columns: 1fr;;
+    }
+
+    .all-hands {
+        grid-column: span 1;
+        grid-row: 1 / 2;
+       
+    }
+    
+    .hands-on-article-1 {
+        grid-column:  span 1;
+        grid-row: 2 / 3;
+      
+    }
+    
+    .hands-on-article-2 {
+        grid-column:  span 1;
+        grid-row: 3 / 4;
+       
+    }
+    
+    .finger-1 {
+        grid-column:  span 1;
+        grid-row: 4 / 5;
+    
+    }
+    
+    
+    .fingers-3 {
+    
+        grid-column:  span 1;
+        grid-row: 5 / 6;
+       
+    }
+    .my-body {
+        grid-template-columns: 1fr;
+    }
+
+    .faces {
+        grid-column: span 1;
+    }
+
+    .face-1 {
+        display: none;
+    }
+
+    .face-2 {
+        display: none;
+    }
+
+    .i-like {
+        grid-column: span 1;
+    }
+
+    .article-col {
+        grid-column: span 1;
+    }
+}

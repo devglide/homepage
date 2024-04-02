@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-bg-color: #DDCCCC;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f171;
+}
+
+.logo-link {
+    display: block; /* Set the <a> tag to be a block-level element */
+    width: 90px; /* Set the width to the same as the logo's width */
+    height: 40px; /* Set the height to the same as the logo's height */
+}
+.film-link {
+    display: block; /* Set the <a> tag to be a block-level element */
+    width: 90px; /* Set the width to the same as the logo's width */
+    height: 40px; /* Set the height to the same as the logo's height */
+    padding-right: 1em;
+}
+
+.journey-link {
+    display: block; /* Set the <a> tag to be a block-level element */
+    width: 90px; /* Set the width to the same as the logo's width */
+    height: 40px; /* Set the height to the same as the logo's height */
+    padding-right: 2em;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--nav-bg-color);
+}
+
+#update {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+    padding: .15rem 1.5rem;
+    letter-spacing: 1px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: var(--nav-bg-color);
+    gap:25px;
+    padding:10px 30px;
+    z-index: 5;
+}
+
+.fill {
+    flex: 1;
+}
+
+.nav-png {
+    height: 40px; 
+    display: inline-block; 
+}
+
+img {
+    max-width: 100%; 
+    max-height: 100%;
+    height: auto;
+}
+
+.main-video {
+    width: 100%;
+    position: sticky;
+    background-color: #f3eeef;
+    top: 55px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    margin: 10px;
+}
+
+.title {
+    font-size: .75rem;
+    color: #888E93;
+}
+
+.author {
+    font-size: .5rem;
+    color: #888E93;
+}
+
+.main-title {
+    font-size: 1rem;
+    color:#888E93
+}
+
+.main-author {
+    font-size: .75rem;
+    margin:0px 0;
+    color:#888E93;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+
+}
+.previews {
+    background-color: rgba(244, 236, 236, 0.875);
+}
+
+@media screen and (min-width: 600px) {
+    .nav {
+        gap: 35px;
+        padding: 10px 30px;
+    }
+    .nav-png {
+        height: 40px;
+    }
+    .main-title {
+        font-size: .75rem;
+        margin-left: 12%;
+    }
+    .main-author {
+        font-size: .5rem;
+        margin-left: 12%;
+    }
+    .separator {
+        width: 80%;
+    }
+
+    .main-video {
+        padding: 5% 10% 0% 10%;
+        top:31px;
+        margin: auto;
+        width: 100%;;
+    }
+  
+
+    .main-video-style {
+        border: 4 solid #000000;
+        padding: 2px;
+        border-radius: 5px;
+        background-color: #888E93;
+        width: 75%;
+        margin: auto;
+    }
+
+    .previews {
+        
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .preview {
+        display: flex;
+        flex-direction: row;
+        gap:5px;
+        margin: 15px;
+    
+    }
+
+    .preview img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 200px;
+        border-radius: 15px;
+        height: auto
+    }   
+}
+
+@media screen and (min-width: 1020px) {
+   
+    .wide-container {
+        display: flex;
+        align-items: flex-start;
+        max-width: 1200px;   
+    }
+
+    .separator {
+        width: 0;
+    }
+
+    .main-video {
+        width: 80%; 
+        position: sticky;
+        top: 30px;
+        margin: 0px;
+        /* height: 90vh; */
+        padding: 5% 1% 3% 1%;  
+    }
+    
+    .previews {
+        width: 20%; 
+        margin:o;
+        padding: 0;
+        display: flex;
+        flex-direction: column;   
+    }
+
+     .main-video-style {
+        border: 0;
+        padding: 0;
+        border-radius: 0;
+        background-color: #888E93;
+        width: 100%;
+    }
+
+    .info {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .preview {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .preview img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        height: auto;
+        margin-top: 10px;
+        
+
+    }
+    
+    .main-title {
+        margin-left: 10px;
+    }
+
+    .main-author {
+        margin-left: 10px;
+    }
+}
